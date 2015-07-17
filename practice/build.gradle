@@ -1,9 +1,9 @@
 
 // Gradle: Task dependencies
-task hello << {
-	println 'Hello world!'
+task taskX(dependsOn: 'taskY') << {
+	println 'taskX'
 }
 
-task intro (dependsOn: hello) << {
-	println "I'm Gradle"
+task taskY << {
+	println 'taskY'
 }
