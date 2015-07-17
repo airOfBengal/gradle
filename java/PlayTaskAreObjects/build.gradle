@@ -1,0 +1,17 @@
+task setupDatabaseTests << {
+// This is the task's existing action
+println 'load test data'
+}
+
+setupDatabaseTests.doFirst{
+println 'create schema'
+}
+
+setupDatabaseTests {
+  doLast{
+println 'create database schema'
+}
+doLast{
+println 'drop database schema'
+}
+}

@@ -1,0 +1,3 @@
+task echoMyPath << {
+println "This task's path is ${path}"
+}
