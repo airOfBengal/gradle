@@ -1,6 +1,5 @@
-task hello{
-	// Gradle: Hello World
-	doLast{
-		println 'Hello world!'
-	}
+
+// Gradle: A shortcut task definition
+task hello << {	
+		println 'Hello world!'	
 }
