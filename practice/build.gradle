@@ -1,9 +1,7 @@
 
-// Gradle: Task dependencies
-task taskX(dependsOn: 'taskY') << {
-	println 'taskX'
-}
-
-task taskY << {
-	println 'taskY'
+// Gradle: Dynamic tasks
+4.times { counter ->
+	task "task$counter" << {
+		println "I'm task number $counter"
+	}
 }
