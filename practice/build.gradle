@@ -1,5 +1,7 @@
 
-// Gradle: A shortcut task definition
-task hello << {	
-		println 'Hello world!'	
+// Gradle: Using Groovy in Gradle's tasks
+task upper << {
+	String someString = 'mY_nAmE'
+	println "Originial: "+ someString
+	println "Upper case: "+ someString.toUpperCase()
 }
