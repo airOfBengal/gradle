@@ -1,4 +1,5 @@
 task hello{
+	// Gradle: Hello World
 	doLast{
 		println 'Hello world!'
 	}
