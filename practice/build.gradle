@@ -1,11 +1,9 @@
 
-// Gradle: Using Groovy in Gradle's tasks
-task upper << {
-	String someString = 'mY_nAmE'
-	println "Originial: "+ someString
-	println "Upper case: "+ someString.toUpperCase()
+// Gradle: Task dependencies
+task hello << {
+	println 'Hello world!'
 }
 
-task count << {
-	4.times { print "$it " }
+task intro (dependsOn: hello) << {
+	println "I'm Gradle"
 }
